@@ -1,0 +1,13 @@
+.bg-disabled {
+    background-color: #ddd;
+    color: #444;
+}
+
+.game {
+    height: 100px;
+    box-sizing: border-box;
+}
+
+.border-2 {
+    border: 4px solid;
+}

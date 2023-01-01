@@ -1,0 +1,153 @@
+[
+    {
+        "id": 1,
+        "title": "Wine race",
+        "source": "TikTok",
+        "link": "https://www.tiktok.com/@jessicacostanzo22/video/7181576894133865733",
+        "played": false,
+        "winner": -1,
+        "points": 5,
+        "border": "",
+        "bg": ""
+    },{
+        "id": 2,
+        "title": "Fastest player",
+        "source": "Instagram",
+        "link": "https://www.instagram.com/reel/ClX4CdlO3N-/",
+        "played": false,
+        "winner": -1,
+        "points": 5,
+        "border": "",
+        "bg": ""
+    },{
+        "id": 3,
+        "title": "Poker only",
+        "source": "TikTok",
+        "link": "https://www.tiktok.com/@drunkengineers/video/7047171816791477510",
+        "played": false,
+        "winner": -1,
+        "points": 5,
+        "border": "",
+        "bg": ""
+    },{
+        "id": 4,
+        "title": "How to blow(job)",
+        "source": "TikTok",
+        "link": "https://www.tiktok.com/@zurimoneekboutique/video/7147442598834375982",
+        "played": false,
+        "winner": -1,
+        "points": 5,
+        "border": "",
+        "bg": ""
+    },{
+        "id": 5,
+        "title": "Jenga",
+        "source": "Instagram",
+        "link": "https://www.instagram.com/reel/CkOipiiOXjR/",
+        "played": false,
+        "winner": -1,
+        "points": 5,
+        "border": "",
+        "bg": ""
+    },{
+        "id": 6,
+        "title": "Wrong Jenga",
+        "source": "TikTok",
+        "link": "https://www.tiktok.com/@shotaholics/video/6954789674393144582",
+        "played": false,
+        "winner": -1,
+        "points": 5,
+        "border": "",
+        "bg": ""
+    },{
+        "id": 7,
+        "title": "Pole position",
+        "source": "TikTok",
+        "link": "https://www.tiktok.com/@leslislgdo/video/7181989193906965806",
+        "played": false,
+        "winner": -1,
+        "points": 5,
+        "border": "",
+        "bg": ""
+    },{
+        "id": 8,
+        "title": "String pull",
+        "source": "TikTok",
+        "link": "https://www.tiktok.com/@shotaholics/video/6953635822428048646",
+        "played": false,
+        "winner": -1,
+        "points": 5,
+        "border": "",
+        "bg": ""
+    },{
+        "id": 9,
+        "title": "Musical bottle",
+        "source": "TikTok",
+        "link": "https://www.tiktok.com/@_iamtootie/video/7160710770810998058",
+        "played": false,
+        "winner": -1,
+        "points": 5,
+        "border": "",
+        "bg": ""
+    },{
+        "id": 10,
+        "title": "Absolute roulette",
+        "source": "TikTok",
+        "link": "https://www.tiktok.com/@darnitdamon/video/6899528334556810502",
+        "played": false,
+        "winner": -1,
+        "points": 5,
+        "border": "",
+        "bg": ""
+    },{
+        "id": 11,
+        "title": "Best sucker award",
+        "source": "TikTok",
+        "link": "https://www.tiktok.com/@libbyrobinson99/video/7024602051057356038",
+        "played": false,
+        "winner": -1,
+        "points": 5,
+        "border": "",
+        "bg": ""
+    },{
+        "id": 12,
+        "title": "Blow cup",
+        "source": "TikTok",
+        "link": "https://www.tiktok.com/@kim.cakes/video/7175692029815655723",
+        "played": false,
+        "winner": -1,
+        "points": 5,
+        "border": "",
+        "bg": ""
+    },{
+        "id": 13,
+        "title": "Ace race",
+        "source": "TikTok",
+        "link": "https://www.tiktok.com/@memezar/video/7038675849746418949",
+        "played": false,
+        "winner": -1,
+        "points": 5,
+        "border": "",
+        "bg": ""
+    },{
+        "id": 14,
+        "title": "Do or drink",
+        "source": "TikTok",
+        "link": "https://www.tiktok.com/@baby_simba47/video/7138552409801968938",
+        "played": false,
+        "winner": -1,
+        "points": 5,
+        "border": "",
+        "bg": ""
+    },{
+        "id": 15,
+        "title": "Choose carefully",
+        "source": "TikTok",
+        "link": "https://www.tiktok.com/@corashircel/video/7157708581029170475",
+        "played": false,
+        "winner": -1,
+        "points": 5,
+        "border": "",
+        "bg": ""
+    }
+]

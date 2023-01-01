@@ -1,0 +1,45 @@
+<div class="overlay">
+    <div class="modal fade show" style="display: block !important">
+        <div class="modal-dialog modal-dialog-centered  modal-xl" style="min-height: 800px !important; z-index: 3">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6" *ngIf="game.source == 'TikTok'">
+                            <app-tiktok-post [link]="game.link"></app-tiktok-post>
+                        </div>
+                        <div class="col-6" *ngIf="game.source == 'Instagram'">
+                            <app-insta-post [link]="game.link"></app-insta-post>
+                        </div>
+    
+                        <div class="col-6 text-center">
+                            <h3 class="modal-title mt-2" id="exampleModalLabel">{{game.title}}</h3>
+    
+                            <hr>
+                            <p>Punteggio: {{game.points}}</p>
+    
+                            <hr>
+                            <label>Seleziona vincitore</label>
+                            <div class="row justify-content-center">
+                                <div class="col-8">
+                                    <select class="form-control" [(ngModel)]="winnerModel">
+                                        <option selected disabled value="0">Seleziona giocatore</option>
+                                        <option *ngFor="let p of players" [value]="p.id">{{p.name}}</option>
+                                    </select>
+                                </div>
+                            </div>
+    
+                            <button class="btn mt-2" [ngClass]="'btn-'+theme" (click)="winner()">
+                                conferma
+                            </button>
+    
+                            <hr>
+                            <button class="btn mt-2" [ngClass]="'btn-outline-'+theme" (click)="close()">
+                                annulla
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

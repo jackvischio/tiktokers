@@ -1,0 +1,24 @@
+<div class="container wrapper p-3">
+    <app-card title="Classifica">
+        <div class="row">
+            <div class="col-12" *ngFor="let item of players">
+                <div class="card card-body p-2 mb-2 d-flex">
+                    <div class="row">
+                        <div class="col-2 text-center">
+                            {{item.name}}
+                        </div>
+                        <div class="col-10">
+                            <div class="progress" style="height: 25px;">
+                                <div class="progress-bar text-start ps-3" [ngClass]="'bg-'+theme" role="progressbar"
+                                    [attr.style]="'width: '+item.perc+'%;'" [attr.aria-valuenow]="item.perc"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    {{item.points}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </app-card>
+</div>

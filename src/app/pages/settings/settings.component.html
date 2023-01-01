@@ -1,0 +1,88 @@
+<div class="container wrapper p-3">
+    <app-card [title]="'Giocatori'">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <div class="input-group">
+                    <input type="text" class="form-control" [(ngModel)]="new_player" placeholder="Nuovo giocatore" />
+                    <div class="input-group-append">
+                        <button [ngClass]="'btn btn-outline-'+theme+' ms-2'" type="button"
+                            (click)="addPlayer()">aggiungi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="m-3">
+        <div class="row p-0 m-0 justify-content-center">
+            <div class="col-3 m-0 p-2" *ngFor="let item of players">
+                <div class="card card-body p-2">
+                    <div class="d-flex justify-content-between">
+                        {{item.name}}
+                        <button type="button" class="btn-close pointer" title="Elimina"
+                            (click)="delPlayer(item.id)"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </app-card>
+    <div class="row">
+        <div class="col-6">
+            <app-card title="Malus">
+                <label>Giocatore:</label>
+                <select [(ngModel)]="player_malus" class="form-control">
+                    <option selected disabled value="0">Seleziona giocatore</option>
+                    <option *ngFor="let p of players" [value]="p.id">{{p.name}}</option>
+                </select>
+
+                <br>
+                <label>Punti da togliere:</label>
+                <input type="number" class="form-control" min="0" [(ngModel)]="player_malus_points">
+
+                <br>
+                <button [ngClass]="'btn btn-outline-'+theme" (click)="malus()">togli</button>
+            </app-card>
+        </div>
+
+        <div class="col-6">
+            <app-card title="Bonus">
+                <label>Giocatore:</label>
+                <select [(ngModel)]="player_bonus" class="form-control">
+                    <option selected disabled value="0">Seleziona giocatore</option>
+                    <option *ngFor="let p of players" [value]="p.id">{{p.name}}</option>
+                </select>
+
+                <br>
+                <label>Punti da aggiungere:</label>
+                <input type="number" class="form-control" min="0" [(ngModel)]="player_bonus_points">
+
+                <br>
+                <button [ngClass]="'btn btn-outline-'+theme" (click)="bonus()">aggiungi</button>
+            </app-card>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <app-card [title]="'Aggiungi gioco'">
+                <label>Nome del gioco:</label>
+                <input type="text" [(ngModel)]="gameName" class="form-control">
+                <br>
+                <label>Punteggio:</label>
+                <input type="number" [(ngModel)]="gamePoints" class="form-control" min="0">
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" [(ngModel)]="hasLink">
+                    <label class="form-check-label"> Link </label>
+                </div>
+                <br>
+                <label>Sorgente:</label>
+                <select [(ngModel)]="gameSource" class="form-control" [disabled]="!hasLink">
+                    <option *ngFor="let opt of gameSourceDomain" value="opt">{{opt}}</option>
+                </select>
+                <br>
+                <label>Link:</label>
+                <input type="text" [(ngModel)]="gameLink" class="form-control" [disabled]="!hasLink">
+                <br>
+                <button [ngClass]="'btn btn-outline-'+theme" (click)="gioco()">aggiungi</button>
+            </app-card>
+        </div>
+    </div>
+</div>
